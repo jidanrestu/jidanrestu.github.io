@@ -1,425 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--Import materialize.css-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Jidan RK</title>
     <link
-      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      media="screen,projection" />
-    <!-- Font Awesome 6.4 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-    <title>Jires Portfolio Website</title>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Portfolio website about me, Jidan Restu Kurniawan or usually called Jires" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta name="og:title" property="og:title" content="Jires Portfolio Website" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="robots" content="noindex, nofollow" />
-    <!-- Custom Style -->
     <style>
-      body {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
+      .jumbotron {
+        padding-top: 6rem;
+        background-color: #e2edff;
       }
 
-      main {
-        flex: 1 0 auto;
+      #projects {
+        background-color: #e2edff;
       }
 
-      .card-title,
-      .slider h3,
-      .slider h5 {
-        text-shadow: 2px 2px 4px #000000;
-      }
-
-      p {
-        text-align: justify;
+      section {
+        padding-top: 5rem;
       }
     </style>
   </head>
-
-  <body id="home" class="scrollspy">
-    <header>
-      <!-- Navbar -->
-      <div class="navbar-fixed">
-        <nav class="indigo darken-4">
-          <div class="nav-wrapper">
-            <div class="container">
-              <a href="#!" class="brand-logo">Web Portfolio</a>
-              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#home" class="waves-effect">Home</a></li>
-                <li><a href="#about" class="waves-effect">About</a></li>
-                <li><a href="#portfolio" class="waves-effect">Portfolio</a></li>
-                <li><a href="#resume" class="waves-effect">Resume</a></li>
-                <li><a href="#blogs" class="waves-effect">Blogs</a></li>
-                <li><a href="#testimony" class="waves-effect">Testimony</a></li>
-                <li><a href="#contact" class="waves-effect">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <!-- Sidenav -->
-      <ul id="slide-out" class="sidenav">
-        <li>
-          <div class="user-view">
-            <div class="background">
-              <img src="https://picsum.photos/id/237/1920/1080" />
-            </div>
-            <a href="#user"><img class="circle" src="https://picsum.photos/id/237/1920/1920" /></a>
-            <a href="#name"><span class="white-text name">Your name</span></a>
-            <a href="#email"><span class="white-text email">your@email.com</span></a>
-          </div>
-        </li>
-        <li><a href="#home" class="waves-effect">Home</a></li>
-        <li><a href="#about" class="waves-effect">About</a></li>
-        <li><a href="#portfolio" class="waves-effect">Portfolio</a></li>
-        <li><a href="#resume" class="waves-effect">Resume</a></li>
-        <li><a href="#blogs" class="waves-effect">Blogs</a></li>
-        <li><a href="#testimony" class="waves-effect">Testimony</a></li>
-        <li><a href="#contact" class="waves-effect">Contact</a></li>
-        <li><div class="divider"></div></li>
-      </ul>
-    </header>
-
-    <main>
-      <div class="parallax-container">
-        <div class="valign-wrapper" style="height: 100%">
-          <div class="container">
-            <h3 class="white-text" style="text-shadow: 2px 2px 4px #000000">Hi, I am Jires</h3>
-            <h5 class="white-text flow-text" style="text-shadow: 2px 2px 4px #000000">
-              A junior developer that just realize coding is fun and stressful
-            </h5>
-          </div>
-        </div>
-        <div class="parallax"><img src="img/technology.png" /></div>
-      </div>
-
-      <section class="section scrollspy" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m4 push-m8">
-              <img src="https://picsum.photos/id/152/1920/1920" alt="profile picture" class="responsive-img materialboxed" />
-            </div>
-            <div class="col s12 m7 pull-m4">
-              <h4>About</h4>
-              <p class="flow-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vel dolorum sapiente nobis recusandae modi adipisci ea amet,
-                harum magni consequuntur error enim fugiat pariatur maiores ipsam velit quo non!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section indigo darken-3 scrollspy" id="portfolio">
-        <div class="container">
-          <h4 class="center white-text">Portfolio</h4>
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed responsive-img" src="https://picsum.photos/id/153/1920/1920" alt="first portfolio" />
-                  <span class="card-title">Title 1</span>
-                </div>
-                <div class="card-content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus cupiditate vero distinctio atque sapiente quisquam
-                    error dicta, harum at.
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="waves-effect waves-light btn indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed responsive-img" src="https://picsum.photos/id/154/1920/1920" alt="second portfolio" />
-                  <span class="card-title">Title 2</span>
-                </div>
-                <div class="card-content">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non tenetur fugit beatae et explicabo ea quisquam. Pariatur, amet.
-                    In, incidunt!
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="waves-effect waves-light btn indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed responsive-img" src="https://picsum.photos/id/155/1920/1920" alt="third portfolio" />
-                  <span class="card-title">Title 3</span>
-                </div>
-                <div class="card-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quisquam voluptatem earum quibusdam iure vero distinctio nobis
-                    porro cum aspernatur!
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="waves-effect waves-light btn indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section scrollspy" id="resume">
-        <div class="container">
-          <h4 class="center">Resume</h4>
-          <div class="row">
-            <div class="col s12 m6">
-              <ul class="collapsible" data-collapsible="expandable">
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">school</i>First</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">school</i>Second</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">school</i>Third</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-              </ul>
-            </div>
-            <div class="col s12 m6">
-              <ul class="collapsible" data-collapsible="expandable">
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">work</i>First</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">work</i>Second</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">work</i>Third</div>
-                  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed responsive-img" src="https://picsum.photos/id/156/1920/1080" alt="first certificate" />
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reprehenderit hic voluptatibus iste enim sed natus nobis
-                    non praesentium in!
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="waves-effect waves-light btn indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img class="materialboxed responsive-img" src="https://picsum.photos/id/157/1920/1080" alt="second certificate" />
-                  <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deleniti delectus quas sequi cumque iste odio minima
-                    quidem libero quasi?
-                  </p>
-                </div>
-                <div class="card-action">
-                  <a href="#" class="waves-effect waves-light btn indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <h4 class="center indigo darken-3 white-text scrollspy" id="blogs" style="margin-bottom: 0; padding: 10px 0">Blogs</h4>
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="https://picsum.photos/id/160/1920/1080" />
-            <div class="caption center-align">
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, dolores.</h5>
-              <a href="#" class="waves-effect waves-light btn-large indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-            </div>
-          </li>
-          <li>
-            <img src="https://picsum.photos/id/161/1920/1080" />
-            <div class="caption left-align">
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, mollitia?</h5>
-              <a href="#" class="waves-effect waves-light btn-large indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-            </div>
-          </li>
-          <li>
-            <img src="https://picsum.photos/id/162/1920/1080" />
-            <div class="caption right-align">
-              <h3>Lorem ipsum dolor sit amet.</h3>
-              <h5 class="light grey-text text-lighten-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, error?</h5>
-              <a href="#" class="waves-effect waves-light btn-large indigo darken-3"><i class="material-icons right">send</i>Check it out!</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <section class="section scrollspy" id="testimony">
-        <div class="container">
-          <h4 class="center black-text">Testimony</h4>
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <img src="https://picsum.photos/id/158/1920/1920" alt="commenter's profile picture" class="circle materialboxed responsive-img" />
-              <span class="title">Name</span>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis ea voluptates asperiores quas deleniti. Dolorem.</p>
-              <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jidan Restu Kurniawan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
-            <li class="collection-item avatar">
-              <img src="https://picsum.photos/id/159/1920/1920" alt="commenter's profile picture" class="circle materialboxed responsive-img" />
-              <span class="title">Name</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam laboriosam assumenda animi odio quas.</p>
-              <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="collection-item avatar">
-              <img src="https://picsum.photos/id/160/1920/1920" alt="commenter's profile picture" class="circle materialboxed responsive-img" />
-              <span class="title">Name</span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsum molestiae odit doloribus quisquam? Molestiae?</p>
-              <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="collection-item avatar">
-              <img src="https://picsum.photos/id/161/1920/1920" alt="commenter's profile picture" class="circle materialboxed responsive-img" />
-              <span class="title">Name</span>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit nobis, quam nam vitae molestias excepturi?</p>
-              <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
-            </li>
-            <li class="collection-item avatar">
-              <img src="https://picsum.photos/id/162/1920/1920" alt="commenter's profile picture" class="circle materialboxed responsive-img" />
-              <span class="title">Name</span>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quam reprehenderit accusantium illum possimus voluptate.</p>
-              <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-      </section>
+      </div>
+    </nav>
 
-      <section class="section grey lighten-3">
-        <div class="container">
-          <h3 class="center">Contact</h3>
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="collection">
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-facebook fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">Jidan Restu Kurniawan</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-instagram fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">@jidan.restu</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-twitter fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">@jidanrk47</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-linkedin fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">Jidan Restu Kurniawan</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-youtube fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">@jidanRK</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-github fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">jidanrestu</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-reddit fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">jidanRK</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fa-solid fa-envelope fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">jidanrk47@gmail.com</span>
-                </a>
-                <a href="#!" class="collection-item">
-                  <i class="fab fa-whatsapp fa-xl indigo-text text-darken-3"></i>
-                  <span class="indigo-text text-darken-3 right">62+ 821 1157 5245</span>
-                </a>
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="https://picsum.photos/id/1/1920/1920" alt="Jidan Restu Kurniawan" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Jidan Restu Kurniawan</h1>
+      <p class="lead">Mahasiswa | Operator IT</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,32L48,64C96,96,192,160,288,165.3C384,171,480,117,576,101.3C672,85,768,107,864,149.3C960,192,1056,256,1152,250.7C1248,245,1344,171,1392,133.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-sm-12 col-md-4">
+            <p>
+              Halo, nama saya Jidan Restu Kurniawan. Saya lahir pada tanggal 27 November 2003 di Jakarta Pusat. Sekarang saya tinggal di Bekasi
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+              <p>
+                  Saya merupakan mahasiswa dari Universitas Pelita Bangsa jurusan Teknik Informatika. Saya bercita-cita menjadi programmer yang dapat diandalkan
+              </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,96C384,107,480,149,576,144C672,139,768,85,864,74.7C960,64,1056,96,1152,117.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-3">
+              <img src="https://picsum.photos/id/10/1080" class="card-img-top" alt="Projects 1" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium autem et fugit expedita error adipisci quia minus aliquam
+                  doloremque placeat.
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="col s12 m7 offset-m1">
-              <div class="card-panel">
-                <h5 class="center">Fill the form if you want to say someting!</h5>
-                <form action="/" method="post">
-                  <div class="row">
-                    <div class="input-field">
-                      <input id="name" type="text" class="validate" required />
-                      <label for="name">Name</label>
-                    </div>
-                    <div class="input-field">
-                      <input id="email" type="text" class="validate" required />
-                      <label for="email">Email</label>
-                    </div>
-                    <div class="input-field">
-                      <textarea id="message" class="materialize-textarea validate" required></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                    <button class="btn waves-effect waves-light indigo darken-3" type="submit" name="action">
-                      Send
-                      <i class="material-icons right">send</i>
-                    </button>
-                  </div>
-                </form>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-3">
+              <img src="https://picsum.photos/id/11/1080" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, aut maxime? Ipsum quae perspiciatis quo aut eveniet, explicabo
+                  vero aliquam.
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-3">
+              <img src="https://picsum.photos/id/12/1080" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at nulla deserunt illo id quia nostrum repellendus.
+                  Repellat, corrupti tenetur?
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-3">
+              <img src="https://picsum.photos/id/13/1080" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quae temporibus blanditiis laboriosam iste? Beatae fuga suscipit
+                  optio provident molestias?
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-3">
+              <img src="https://picsum.photos/id/14/1080" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum tenetur voluptas ut eius dolorem. Sit tempore nemo ea officia
+                  consectetur.
+                </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="page-footer grey lighten-3 scrollspy" id="contact">
-      <div class="footer-copyright indigo darken-4">
-        <div class="container center">© 2023 Copyright Text</div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,160L24,149.3C48,139,96,117,144,122.7C192,128,240,160,288,160C336,160,384,128,432,112C480,96,528,96,576,133.3C624,171,672,245,720,229.3C768,213,816,107,864,85.3C912,64,960,128,1008,138.7C1056,149,1104,107,1152,101.3C1200,96,1248,128,1296,128C1344,128,1392,96,1416,80L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,224L24,213.3C48,203,96,181,144,186.7C192,192,240,224,288,250.7C336,277,384,299,432,266.7C480,235,528,149,576,133.3C624,117,672,171,720,170.7C768,171,816,117,864,122.7C912,128,960,192,1008,197.3C1056,203,1104,149,1152,149.3C1200,149,1248,203,1296,229.3C1344,256,1392,256,1416,256L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-primary text-white py-5">
+      <p>Created with love <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/jidan.restu/" class="text-white fw-bold">Jidan Restu Kurniawan</a></p>
     </footer>
 
-    <!--JavaScript at end of body for optimized loading-->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sidenav").sidenav();
-        $(".parallax").parallax();
-        $(".collapsible").collapsible({ accordion: false });
-        $(".materialboxed").materialbox();
-        $(".slider").slider({ indicators: false, height: 600 });
-        $(".scrollspy").scrollSpy({ scrollOffset: 60 });
-      });
-    </script>
+    <!-- If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper. -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script> -->
   </body>
 </html>
